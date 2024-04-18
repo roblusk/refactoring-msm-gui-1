@@ -129,13 +129,14 @@
     <th>
     </th>
   </tr>
-
+  films = @the_director.movies.order({ :year => :asc })
+  <!--
   <% the_id = @the_director.id %>
 
   <% matching_movies = Movie.where({ :director_id => the_id }) %>
 
   <% films = matching_movies.order({ :year => :asc }) %>
-
+  -->
   <% films.each do |a_movie| %>
     <tr>
       <td>
